@@ -38,7 +38,7 @@ if(isset($_SESSION['id_student'])) {
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="index.php">User Login</a>
+    <a href="index.php">Admin Login</a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
@@ -53,12 +53,12 @@ if(isset($_SESSION['id_student'])) {
         <input type="password" class="form-control" id="password" name="password" placeholder="Password">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
-      <div class="row">
-        <div class="col-xs-8">
+      <div class="row" style="display:flex; justify-content:center">
+        <!--<div class="col-xs-8">
           <a href="register.php">Don't have an account? Sign Up</a>
-        </div>
+        </div>-->
         <!-- /.col -->
-        <div class="col-xs-4">
+        <div class="col-xs-4 col-12" >
           <button type="submit" style="background-color: #5fb759;" class="btn btn-primary btn-block btn-flat">Sign In</button>
         </div>
         <!-- /.col -->

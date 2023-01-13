@@ -23,7 +23,10 @@ if(isset($_POST)) {
 	//if user table has this this login details
 	if($result->num_rows > 0) {
 		//output data
+
 		while($row = $result->fetch_assoc()) {
+            $_SESSION['id_student'] = $row['id_student'];
+            $_SESSION['name'] = $row['fname']." ".$row['lname'];
             header("Location: register.php");
 			//Redirect them to user dashboard once logged in successfully
 			

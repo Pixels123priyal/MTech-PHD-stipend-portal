@@ -139,7 +139,7 @@ else
           <input type="Submit" id="submit" name="submit" value="Submit" style="color: black;">
         </div>
       </form> 
-      <a href="#">Already have an account? Sign In</a>
+      <a href="login.php">Already have an account? Sign In</a>
     </div>
   </div>
 

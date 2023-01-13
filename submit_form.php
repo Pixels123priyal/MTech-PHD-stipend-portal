@@ -1,6 +1,6 @@
 <?php
 include 'db.php';
-session_start();
+
 
 if (isset($_POST['submit']))
 {
@@ -13,7 +13,8 @@ $sal = $_POST['sal'];
 $deets = $_POST['deets'];
 $amo = $_POST['amo'];
 $teacher = $_POST['teacher'];
-
+session_start();
+$student_id = $_SESSION['id_student'];
 
 
 $sql = "INSERT INTO `stipend_applications`(`roll_no`, `name`, `date`, `mtech`, `sem`, `financial_ast`, `financial_ast_from`, `financial_ast_amt`, `teacher`) VALUES ('$roll_no','$name','$month_year','$field','$semester','$sal','$deets','$amo','$teacher')";
