@@ -10,23 +10,23 @@ require_once("db.php");
 if(isset($_POST)) {
 
 	//Escape Special Characters in String
-	$email = mysqli_real_escape_string($conn, $_POST['email']);
+	$username = mysqli_real_escape_string($conn, $_POST['username']);
 	$password = mysqli_real_escape_string($conn, $_POST['password']);
 
 	//Encrypt Password
 	//$password = base64_encode(strrev(md5($password)));
 
 	//sql query to check user login
-	$sql = "SELECT * FROM student WHERE email='$email' AND password='$password'";
+	$sql = "SELECT * FROM admin WHERE username = '$username' AND password='$password'";
 	$result = $conn->query($sql);
 
 	//if user table has this this login details
 	if($result->num_rows > 0) {
 		//output data
 		while($row = $result->fetch_assoc()) {
-            $_SESSION['id_student'] = $row['id_student'];
-            $_SESSION['name'] = $row['fname']." ".$row['lname'];
-            header("Location: user/index.php");
+            $_SESSION['id_admin'] = $row['id_admin'];
+			$_SESSION['username'] = $row['username'];
+            header("Location: admin/dashboard.php");
 			//Redirect them to user dashboard once logged in successfully
 			
 		}
@@ -34,7 +34,7 @@ if(isset($_POST)) {
 
  		//if no matching record found in user table then redirect them back to login page
  		$_SESSION['loginError'] = $conn->error;
- 		header("Location: login.php");
+ 		header("Location: adminlogin.php");
 		exit();
  	}
 
@@ -43,6 +43,6 @@ if(isset($_POST)) {
 
 } else {
 	//redirect them back to login page if they didn't click login button
-	header("Location: login.php");
+	header("Location: adminlogin.php");
 	exit();
 }

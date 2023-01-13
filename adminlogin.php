@@ -33,28 +33,28 @@ session_start();
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="index.php">User Login</a>
+    <a href="index.php">Admin Login</a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
     <p class="login-box-msg"></p>
 
-    <form method="post" action="checklogin.php">
+    <form method="post" action="checkadminlogin.php">
       <div class="form-group has-feedback">
-        <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+        <input type="text" class="form-control" id="username" name="username" placeholder="Username">
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
         <input type="password" class="form-control" id="password" name="password" placeholder="Password">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
-      <div class="row">
-        <div class="col-xs-8">
-          <a href="user/index.php">Don't have an account? Sign Up</a>
-        </div>
+      <div class="row" style="display:flex; justify-content:center">
+        <!--<div class="col-xs-8">
+          <a href="register.php">Don't have an account? Sign Up</a>
+        </div>-->
         <!-- /.col -->
-        <div class="col-xs-4">
-          <button type="submit" class="btn btn-primary btn-block btn-flat" style="background-color: #5fb759;">Sign In</button>
+        <div class="col-xs-4 col-12" >
+          <button type="submit" style="background-color: #5fb759;" class="btn btn-primary btn-block btn-flat">Sign In</button>
         </div>
         <!-- /.col -->
       </div>
