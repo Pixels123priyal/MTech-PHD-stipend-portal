@@ -18,7 +18,7 @@
       outline: none;
       font-family: Roboto, Arial, sans-serif;
       font-size: 14px;
-      color: rgb(68, 64, 64);
+      color: rgb(48, 45, 45);
       line-height: 22px;
       }
       h1 {
@@ -50,7 +50,7 @@
       }
       .banner {
       position: relative;
-      height: 300px;
+      height: 200px;
       background-image: url("slide-01.jpg"); 
       background-color: antiquewhite; 
       background-size: cover;
@@ -294,7 +294,7 @@ cursor: pointer;
           <label for="amo">Amount in Rs:</label>
           <input id="amo" type="number" name="amo" />
         </div>
-          <p>A] Certificate by teacher monitoring work load of student.</p>
+          <!-- <p>A] Certificate by teacher monitoring work load of student.</p>
           <p>Student has completed/not completed teaching assistantship requirements of 8 to 10 hours per week.</p>
                     <div class="item">
                       <label for="fname">Name of Teacher<span>*</span></label>
@@ -304,52 +304,39 @@ cursor: pointer;
                       <label for="activity">Signature of the Teacher<span>*</span></label>
                       <input id="activity" type="text" name="activity" />
                     </div>
-                    <div class="item">
-                      <label for="fee">Date<span>*</span></label>
-                      <input id="fee" type="number" name="fee" />
-                    </div>
+                    
                              <div class="item">
-                      <label for="bdate">Birth Date <span>*</span></label>
+                      <label for="bdate">Date <span>*</span></label>
                       <input id="bdate" type="date" name="bdate" />
                       <i class="fas fa-calendar-alt"></i>
-                    </div>
-                  <div class="item">
-                       <p>Grade</p>
-                      <select>
-                        <option selected value="" disabled selected></option>
-                       <option value="1" >1st</option>
-                        <option value="2">2nd</option>
-                        <option value="3">3rd</option>
-                       <option value="4">4th</option>
-                       <option value="5">5th</option>
-                        <option value="6">6th</option>
-                       <option value="7">7th</option>
-                      <option value="8">8th</option>
-                      <option value="9">9th</option>
-                       <option value="10">10th</option>
-                        <option value="11">11th</option>
-                       <option value="12">12th</option>
-                      </select>
-                    </div>
-<p>B] Certificate by project supervisor of student</p>
-<p>The performance of student with respect to project work is satisfactory/not satisfactory</p>
+                    </div> -->
+                 
+<!-- <p>B] Certificate by project supervisor of student</p>
+<p>The performance of student with respect to project work is satisfactory/not satisfactory</p> -->
 
   <div class="item">
-            <label for="fname">Name of the Project supervisor <span>*</span></label>
-            <input id="fname" type="text" name="fname" />
+            <label for="fname">Name of the teacher monitoring the work load of student <span>*</span></label>
+            <select>
+              <option selected value="" disabled selected></option>
+              <option value="1" >Mr. X</option>
+              <option value="2" >Mr. Y</option>
+           
+            </select>
           </div>
-          <div class="item">
+          <!-- <div class="item">
             <label for="activity">Signature of project supervisor<span>*</span></label>
             <input id="activity" type="text" name="activity" />
-          </div>
+          </div> -->
     
-            <div class="item">
+            <!-- <div class="item">
             <label for="bdate">Date <span>*</span></label>
             <input id="bdate" type="date" name="bdate" />
             <i class="fas fa-calendar-alt"></i>
-          </div>
+          </div> -->
 <p>Certificate by M.Tech. program coordinator/Head of Department of above mentioned Program</p>
 <p>On the basis of above information, the student's PG Scholarship may be approved/may not be approved</p>
+
+</div>
 
  
 
