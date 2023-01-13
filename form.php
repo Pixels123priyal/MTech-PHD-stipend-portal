@@ -1,3 +1,6 @@
+<?php
+include 'submit_form.php';
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -41,16 +44,13 @@
       align-items: center;
       height: inherit;
       padding: 20px;
-      margin-left: 220px;
-      margin-right: 220px;
-
       }
       form {
       width: 100%;
       padding: 20px;
       border-radius: 6px;
       background: #fff;
-      box-shadow: 0 0 12px #006622; 
+      box-shadow: 0 0 8px #006622; 
       }
       .banner {
       position: relative;
@@ -223,7 +223,7 @@ cursor: pointer;
   </head>
   <body>
     <div class="testbox">
-      <form>
+      <form method="post" action="submit_form.php">
         <div class="banner">
           <h1>Progress Report for PG Scholarship for GATE Qualified Students of M.Tech. Programmes  </h1>
         </div>
@@ -231,54 +231,45 @@ cursor: pointer;
         <fieldset>
           <legend>Program report for the month & year for which Scholarship is to be released:</legend>
 
-          <!-- <div class="item">
-            <label for="MY">(Month & Year)</label>
-          <input id ="MY" type="date" name="MY">
-          </div> -->
-
           <div class="item">
-            <label for="bdate">Month & Year <span>*</span></label>
-            <input id="bdate" type="date" name="bdate" />
-            <i class="fas fa-calendar-alt"></i>
+            <label for="MY">(Month & Year)</label>
+            <input id ="MY" type="date" name="MY">
           </div>
-
-          
-
           <div class="item">
             <label for="activity">Name:<span>*</span></label>
-            <input id="activity" type="text" name="activity" />
+            <input id="name" type="text" name="name" />
           </div>
           <div class="item">
             <label for="fee">Roll No.<span>*</span></label>
-            <input id="fee" type="number" name="fee" />
+            <input id="roll_no" type="text" name="roll_no" />
           </div>
           
         <div class="item">
              <p>Master of Technology in: </p>
-            <select>
+            <select id="field" name="field">
               <option selected value="" disabled selected></option>
-              <option value="1" >Civil Engg(Specialization in environmental engineering)</option>
-              <option value="2">Civil Engg(Specialization in construction management)</option>
-              <option value="3">Civil Engg(Specialization in structural engineering)</option>
-             <option value="4">Textile Technology</option>
-             <option value="5">Electrical Engg(Specialization in Power System)</option>
-              <option value="6">Electrical Engg(Specialization in Control System)</option>
-             <option value="7">Electronics Engineering</option>
-            <option value="8">Electronics and Telecommunication Engineering</option>
-            <option value="9">Production Engineering</option>
-             <option value="10">Project Management</option>
-              <option value="11">Computer Engineering</option>
-             <option value="12">Computer Engg(specialization in NIMS)</option>
-             <option value="13">Computer Engg(specialization in Software Engg)</option>
-             <option value="14">Mechanical Engg(specialization in Machine Design)</option>
-             <option value="15">Mechanical Engg(specialization in Automobile Engg)</option>
-             <option value="16">Mechanical Engg(specialization in Thermal Engg)</option>
-             <option value="17">Mechanical Engg(specialization in CAD/CAM & Automation)</option>
+              <option  >Civil Engg(Specialization in environmental engineering)</option>
+              <option >Civil Engg(Specialization in construction management)</option>
+              <option >Civil Engg(Specialization in structural engineering)</option>
+             <option>Textile Technology</option>
+             <option >Electrical Engg(Specialization in Power System)</option>
+              <option>Electrical Engg(Specialization in Control System)</option>
+             <option >Electronics Engineering</option>
+            <option >Electronics and Telecommunication Engineering</option>
+            <option >Production Engineering</option>
+             <option >Project Management</option>
+              <option >Computer Engineering</option>
+             <option >Computer Engg(specialization in NIMS)</option>
+             <option >Computer Engg(specialization in Software Engg)</option>
+             <option >Mechanical Engg(specialization in Machine Design)</option>
+             <option >Mechanical Engg(specialization in Automobile Engg)</option>
+             <option >Mechanical Engg(specialization in Thermal Engg)</option>
+             <option >Mechanical Engg(specialization in CAD/CAM & Automation)</option>
             </select>
           </div>
           <div class="item">
             <p>Semester</p>
-           <select>
+           <select id="semester" name="semester">
              <option selected value="" disabled selected></option>
             <option value="I" >I</option>
              <option value="II">II</option>
@@ -327,23 +318,12 @@ cursor: pointer;
 <!-- <p>B] Certificate by project supervisor of student</p>
 <p>The performance of student with respect to project work is satisfactory/not satisfactory</p> -->
 
-
-
-          <div class="item">
+  <div class="item">
             <label for="fname">Name of the teacher monitoring the work load of student <span>*</span></label>
-            <select>
+            <select id="teacher" name="teacher">
               <option selected value="" disabled selected></option>
-              <option value="1" >Mr. X</option>
-              <option value="2" >Mr. Y</option>
-           
-            </select>
-          </div>
-          <div class="item">
-            <label for="fname">Name of the project supervisor monitoring the work load of student <span>*</span></label>
-            <select>
-              <option selected value="" disabled selected></option>
-              <option value="1" >Mr. X</option>
-              <option value="2" >Mr. Y</option>
+              <option >Mr. X</option>
+              <option >Mr. Y</option>
            
             </select>
           </div>
@@ -367,7 +347,7 @@ cursor: pointer;
     </div>
                 </fieldset>
         <div class="btn-block">
-          <button type="submit" href="/">Submit</button>
+          <button type="submit" id="submit" name="submit" href="/">Submit</button>
         </div>
       </form>
     </div>
