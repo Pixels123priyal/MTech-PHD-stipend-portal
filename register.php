@@ -72,8 +72,9 @@ else
 }
 	echo "<script type='text/javascript'>alert('$message');</script>";
 }
-  echo "<script> location.href='login.php'; </script>";
-  exit;
+  //echo "<script> location.href='login.php'; </script>";
+  //exit;
+  header("location: ../login.php");
 
 }
 ?>
@@ -87,7 +88,7 @@ else
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/validate.js"></script>
    </head>
-<body>
+<body style="background-color:#d9d9d9">
   <div class="container">
     <div class="title">Registration</div>
     <div class="content">
@@ -136,10 +137,10 @@ else
           </div>
           
         <div class="button">
-          <input type="Submit" id="submit" name="submit" value="Submit" style="color: black;">
+          <input type="Submit" id="submit" name="submit" value="Submit" style="background-color:#5fb759;color: black;">
         </div>
       </form> 
-      <a href="#">Already have an account? Sign In</a>
+      <a href="login.php">Already have an account? Sign In</a>
     </div>
   </div>
 

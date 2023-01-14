@@ -69,7 +69,7 @@ https://templatemo.com/tm-543-breezed
                                 </ul>
                             </li>
                             <li class="scroll-to-section"><a href="#announcements">Announcements</a></li> 
-                            <li class="scroll-to-section"><a href="#contact-us">Contact Us</a></li> 
+                            <!-- <li class="scroll-to-section"><a href="#contact-us">Contact Us</a></li>  -->
                             
                         </ul>        
                         <a class='menu-trigger'>
@@ -151,18 +151,18 @@ https://templatemo.com/tm-543-breezed
                         </div>
                       </div>
 
-                      <div class="card" style="background-color: rgb(197, 205, 178); margin-bottom: 15px;">
-                        <!-- <h5 class="card-header">Featured</h5> -->
+                      <!-- <div class="card" style="background-color: rgb(197, 205, 178); margin-bottom: 15px;">
+                         <h5 class="card-header">Featured</h5>
                         <div class="card-body">
-                          <!-- <h5 class="card-title">Form Release</h5> -->
+                           <h5 class="card-title">Form Release</h5>
                           <div class="features-icon">
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEVqAm0eM5XGzH2MyojeuN9x4VJIm_HBp2RQ&usqp=CAU" alt="" style="width: 60px;">
                             <h5 class="card-title">Form Release</h5>
                         </div>
                           <p class="card-text">The form for applications for Mtech stipends has been released on 9th January 2023. The deadline for the same is 20th February 2023. Please sure to apply before the deadline. </p>
-                          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                           <a href="#" class="btn btn-primary">Go somewhere</a> 
                         </div>
-                      </div>
+                      </div> -->
                     </div>
                 </div>
                 
@@ -197,13 +197,13 @@ https://templatemo.com/tm-543-breezed
                             <div class="col-md-6 col-sm-6">
                                 <div class="service-item">
                                     <img src="images/service-item-01.png" alt="">
-                                    <h4>Robust</h4>
+                                    <h4>Reliable</h4>
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-6">
                                 <div class="service-item">
                                     <img src="images/contact-info-03.png" alt="">
-                                    <h4>Reliable</h4>
+                                    <h4>Get notified</h4>
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-6">
@@ -243,7 +243,7 @@ https://templatemo.com/tm-543-breezed
     <!-- ***** Testimonials Ends ***** -->
     
     <!-- ***** Contact Us Area Starts ***** -->
-    <section class="section" id="contact-us">
+    <!-- <section class="section" id="contact-us">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-xs-12">
@@ -299,7 +299,7 @@ https://templatemo.com/tm-543-breezed
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- ***** Contact Us Area Ends ***** -->
     
     <!-- ***** Footer Start ***** -->

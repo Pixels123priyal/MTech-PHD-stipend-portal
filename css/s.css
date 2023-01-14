@@ -11,7 +11,7 @@ body{
   justify-content: center;
   align-items: center;
   padding: 10px;
-  background: #1A1E25;
+  background: #c6d2e7;
 }
 
 a{
@@ -27,7 +27,7 @@ a{
   background-color: #fff;
   padding: 25px 30px;
   border-radius: 5px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 5px 10px rgba(141, 141, 141, 0.15);
 }
 .container .title{
   font-size: 25px;
@@ -42,7 +42,7 @@ a{
   height: 3px;
   width: 30px;
   border-radius: 5px;
-  background: #00fecb;
+  background: #5fb759;
 }
 .content form .user-details{
   display: flex;
@@ -124,11 +124,11 @@ form .input-box span.details{
    letter-spacing: 1px;
    cursor: pointer;
    transition: all 0.3s ease;
-   background: #00fecb;
+   background: #5fb759;
  }
  form .button input:hover{
   /* transform: scale(0.99); */
-  background: #00fecb;
+  background: #5fb759;
   }
  @media(max-width: 584px){
  .container{

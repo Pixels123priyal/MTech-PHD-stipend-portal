@@ -101,23 +101,34 @@ require_once("../db.php");
                     </thead>
                     <tbody>
                        <?php
-                      // $sql = "SELECT job_post.*, company.companyname FROM job_post INNER JOIN company ON job_post.id_company=company.id_company";
-                      // $result = $conn->query($sql);
-                      // if($result->num_rows > 0) {
-                      //   $i = 0;
-                      //   while($row = $result->fetch_assoc()) {
-                      // ?>
-<!--                     //   <tr>
-                        // <td><?php echo $row['jobtitle']; ?></td>
-                        <td><?php echo $row['companyname']; ?></td>
-                        <td><?php echo date("d-M-Y", strtotime($row['createdat'])); ?></td>
-                        <td><a href="view-job-post.php?id=<?php echo $row['id_jobpost']; ?>"><i class="fa fa-address-card-o"></i></a></td>
-                        <td><a href="delete-job-post.php?id=<?php echo $row['id_jobpost']; ?>"><i class="fa fa-trash"></i></a></td>
-                      </tr>   -->
+                       $teacher = $_SESSION['username'];
+                      $sql = "SELECT * FROM stipend_applications WHERE teacher = '$teacher'";
+                      $result = $conn->query($sql);
+                      if($result->num_rows > 0) {
+                        $i = 0;
+                        while($row = $result->fetch_assoc()) {
+                      ?>
+                     <tr>
+                         <td><?php echo $row['name']; ?></td>
+                        <td><?php echo $row['roll_no']; ?></td>
+                        <td>
+                            <?php 
+                            if($row['status'] == '0') {
+                                echo "Pending";
+                              } else if($row['status'] == '1') {
+                                echo "Approved";
+                              } else if ($row['status'] == '2') {
+                                echo "Rejected";
+                              } 
+                            ?>
+                         </td>
+                        <td><a href="view-job-post.php?id=<?php echo $row['id_application']; ?>"><i class="fa fa-address-card-o"></i></a></td>
+                        <td><a href="delete-job-post.php?id=<?php echo $row['id_application']; ?>"><i class="fa fa-trash"></i></a></td>
+                      </tr>  
                             <?php
-                    //     }
-                    //   }
-                    // ?>
+                        }
+                      }
+                    ?>
                     </tbody>                    
                   </table>
                 </div>

@@ -13,14 +13,6 @@ if(empty($_SESSION['id_admin'])) {
 require_once("../db.php");
 
 
-  
-$sql1 = "SELECT * FROM stipend_applications WHERE id_application='$_GET[id]'";
-$result1 = $conn->query($sql1);
-if($result1->num_rows > 0) 
-{
-  $row = $result1->fetch_assoc();
-}
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -78,51 +70,36 @@ if($result1->num_rows > 0)
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper" style="margin-left: 0px;">
-
+<form method="post" action="reason-update.php">
     <section id="candidates" class="content-header">
       <div class="container">
         <div class="row">          
           <div class="col-md-9 bg-white padding-2">
             <div class="pull-left">
-              <h2><b><i><?php echo $row['name'] ?></i></b></h2>
+              <h2><b><i><?php echo 'Enter Reason' ?></i></b></h2>
             </div>
             <div class="pull-right">
               <a href="applications.php" class="btn btn-default btn-lg btn-flat margin-top-20"><i class="fa fa-arrow-circle-left"></i> Back</a>
             </div>
             <div class="clearfix"></div>
             <hr>
+            
             <div>
-              <p><span class="margin-right-10"> <i class="fa fa-calendar text-green"></i> <?php echo date("d-M-Y", strtotime($row['applieddate'])); ?></p>              
-            </div>
-            <div>
-              <p><?php echo 'Month and Year : '. date("d-M-Y", strtotime($row['date'])); ?></h3>
-              <p><?php echo 'Name : '. $row['name']; ?></p>
-              <p><?php echo 'Roll No : '. $row['roll_no']; ?></p>
-              <p></p><?php echo 'Master of Technology in : '. $row['mtech']; ?></p>
-              <p></p><?php echo 'Semester : '. $row['sem']; ?> </p>
-              <p><?php echo 'Emolument/salary/stipend/and other financial assistance received from any other source during this period : '. $row['financial_ast']; ?></p>
-              <p><?php echo 'If YES, details there of from: '. $row['financial_ast_from'];?></p>
-              <p><?php echo 'Amount in Rs: '. $row['financial_ast_amt']; ?> </p>
-
-<label for="ps">Choose a project supervisor:</label>
-
-<select name="ps" id="ps">
-  <option selected value='' disabled selected></option>
-  <option value="A">Mr. A</option>
-  <option value="B">Mr. B</option>
-</select>
 <div>
+    <div class="form-group">
+    <label for="Name">Student Name</label>
+    <input name="name" placeholder="Name" value="name">
+    </div>
+   
   <label for="reas">Reason (if rejected)</label><br>
-  <input id="reas" name="reas" rows="4" cols="100">
+  <textarea id="reas" name="reas" rows="4" cols="100"></textarea>
 </div>
 <table width=100% style="margin:30px 0px">
   <tr>
     <td style="text-align:center">
-      <button style="width:50%; background-color:lightgreen" ><a href="accept-application.php?id=<?php echo $row['id_application'];?>">Accept</a></button>
+      <button style="width:50%; background-color:lightgreen" ><a href="reason-update.php">Submit</a></button>
     </td>
-    <td style="text-align:center">
-      <button style="width:50%; background-color:#FF7377"><a href="reject-application.php?id=<?php echo $row['id_application'];?>">Reject</a></button>
-    </td>
+    
   </tr>
 </table>
 </div>
@@ -135,7 +112,7 @@ if($result1->num_rows > 0)
       </div>
     </section>
 
-    
+  </form>
 
   </div>
   <!-- /.content-wrapper -->
