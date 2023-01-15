@@ -310,7 +310,7 @@ https://templatemo.com/tm-543-breezed
                     <div class="left-text-content">
                         <p>Copyright &copy; 2023 VJTI Stipend Portal.
                         
-                        - Design: <a rel="nofollow noopener" href="https://templatemo.com">TemplateMo</a></p>
+                        </p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-xs-12">

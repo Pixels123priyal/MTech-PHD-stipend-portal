@@ -74,7 +74,7 @@ else
 }
   //echo "<script> location.href='login.php'; </script>";
   //exit;
-  header("location: ../login.php");
+  header("location: login.php");
 
 }
 ?>

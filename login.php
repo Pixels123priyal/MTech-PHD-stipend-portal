@@ -50,7 +50,7 @@ session_start();
       </div>
       <div class="row">
         <div class="col-xs-8">
-          <a href="user/index.php">Don't have an account? Sign Up</a>
+          <a href="register.php">Don't have an account? Sign Up</a>
         </div>
         <!-- /.col -->
         <div class="col-xs-4">

@@ -41,26 +41,26 @@ require_once("../db.php");
 <body class="hold-transition skin-green sidebar-mini">
 <div class="wrapper">
 
-  <header class="main-header">
+<header class="main-header">
 
-    <!-- Logo -->
-    <a href="index.php" class="logo logo-bg skin-green">
-      <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>SM</b>P</span>
-      <!-- logo for regular state and mobile devices -->
-      <span class='skin-green'><b>Stipend Management</b> Portal</span>
-    </a>
+<!-- Logo -->
+<a href="index.php" class="logo logo-bg">
+  <!-- mini logo for sidebar mini 50x50 pixels -->
+  <span class="logo-mini"><b>J</b>P</span>
+  <!-- logo for regular state and mobile devices -->
+  <span class="logo-lg"><b>Admin</b> Portal</span>
+</a>
 
-    <!-- Header Navbar: style can be found in header.less -->
-    <nav class="navbar navbar-static-top">
-      <!-- Navbar Right Menu -->
-      <div class="navbar-custom-menu">
-        <ul class="nav navbar-nav">
-                   
-        </ul>
-      </div>
-    </nav>
-  </header>
+<!-- Header Navbar: style can be found in header.less -->
+<nav class="navbar navbar-static-top">
+  <!-- Navbar Right Menu -->
+  <div class="navbar-custom-menu">
+    <ul class="nav navbar-nav">
+              
+    </ul>
+  </div>
+</nav>
+</header>
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper" style="margin-left: 0px;">

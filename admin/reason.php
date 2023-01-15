@@ -44,7 +44,7 @@ require_once("../db.php");
   <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
-<body class="hold-transition skin-blue sidebar-mini">
+<body class="hold-transition skin-green sidebar-mini">
 <div class="wrapper">
 
   <header class="main-header">
@@ -54,7 +54,7 @@ require_once("../db.php");
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>J</b>P</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Stipend</b> Portal</span>
+      <span class="logo-lg"><b>Admin</b> Portal</span>
     </a>
 
     <!-- Header Navbar: style can be found in header.less -->
@@ -88,7 +88,7 @@ require_once("../db.php");
 <div>
     <div class="form-group">
     <label for="Name">Student Name</label>
-    <input name="name" placeholder="Name" value="name">
+    <input name="name" placeholder="Name" >
     </div>
    
   <label for="reas">Reason (if rejected)</label><br>
